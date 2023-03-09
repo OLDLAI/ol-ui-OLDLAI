@@ -1,12 +1,14 @@
-import { defineComponent as d, computed as n, openBlock as i, createElementBlock as u, normalizeClass as a, unref as f, renderSlot as m } from "vue";
+import { defineComponent as s, computed as n, openBlock as u, createElementBlock as i, normalizeClass as a, unref as f, renderSlot as m } from "vue";
 import { buttonProps as b } from "./button.mjs";
 import "./index.less.mjs";
-const k = ["disabled"], h = /* @__PURE__ */ d({
-  name: "button",
+const _ = ["disabled"], k = s({
+  name: "ol-button"
+}), B = /* @__PURE__ */ s({
+  ...k,
   props: b,
   emits: ["click"],
-  setup(s, { expose: r, emit: l }) {
-    const t = s, c = n(() => {
+  setup(l, { expose: r, emit: c }) {
+    const t = l, d = n(() => {
       const { type: e, disabled: o } = t;
       return [
         "ol-button",
@@ -30,20 +32,20 @@ const k = ["disabled"], h = /* @__PURE__ */ d({
     });
     n(() => !t.type || t.type === "default" ? "" : "#ffffff");
     const p = () => {
-      l("click");
+      c("click");
     };
     return r({
       /** @description button type */
       type: t.type
-    }), (e, o) => (i(), u("button", {
-      class: a(f(c)),
+    }), (e, o) => (u(), i("button", {
+      class: a(f(d)),
       onClick: p,
       disabled: t.disabled
     }, [
       m(e.$slots, "default")
-    ], 10, k));
+    ], 10, _));
   }
 });
 export {
-  h as default
+  B as default
 };

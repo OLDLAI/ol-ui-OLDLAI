@@ -19,5 +19,6 @@
     "**/*.css"
   ],
   "author": "OLDLAI",
-  "license": "MIT"
+  "license": "MIT",
+  "typings": "lib/index.d.ts"
 }

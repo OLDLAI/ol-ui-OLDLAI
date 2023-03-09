@@ -5,14 +5,13 @@
 </template>
   
   
-<script lang="ts" setup >
+<script lang="ts" setup name="olButton">
   import { computed } from 'vue'
   import { buttonProps } from './button'
 /*   import "uno.css"; */
   import './index.less'
   const props = defineProps(buttonProps)
   const emits = defineEmits(['click'])
-  
   //通过props中的type, disabled计算出类名进行添加
   const computedCls = computed(() => { 
     const { type, disabled } = props
@@ -53,6 +52,11 @@
     type: props.type,
   })  
 </script>
-  
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "ol-button"
+});
+</script>
   
   
