@@ -1,0 +1,23 @@
+{
+  "name": "olui-oldlai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js", 
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "olui",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "OLDLAI",
+  "license": "MIT"
+}
