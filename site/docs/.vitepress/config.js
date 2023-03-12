@@ -1,6 +1,4 @@
 export default {
-    title: 'olui',
-    base: process.env.NODE_ENV === 'production' ? '/olui/' : '/',
     themeConfig: {
       siteTitle: "vitepress",
       nav: [
