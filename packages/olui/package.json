@@ -1,6 +1,6 @@
 {
   "name": "olui-oldlai",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js", 
   "module": "es/index.mjs",
@@ -9,7 +9,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:olui": "gulp -f packages/components/script/build/index.ts"
   },
   "keywords": [
     "olui",

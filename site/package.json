@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "ol-ui": "^1.0.12",
-    "olui-oldlai": "workspace:^1.0.0",
+    "olui-oldlai": "workspace:^1.0.5",
     "olui1": "workspace:^1.0.0"
   }
 }

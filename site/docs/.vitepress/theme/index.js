@@ -1,5 +1,5 @@
 import DefaultTheme from "vitepress/theme";
-import olui1 from "olui1";
+import olui1 from "olui-oldlai";
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {

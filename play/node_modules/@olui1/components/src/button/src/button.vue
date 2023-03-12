@@ -8,8 +8,7 @@
 <script lang="ts" setup name="olButton">
   import { computed } from 'vue'
   import { buttonProps } from './button'
-/*   import "uno.css"; */
-  import './index.less'
+  import './style/index.less'
   const props = defineProps(buttonProps)
   const emits = defineEmits(['click'])
   //通过props中的type, disabled计算出类名进行添加

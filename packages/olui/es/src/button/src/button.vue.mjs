@@ -1,6 +1,6 @@
 import { defineComponent as s, computed as n, openBlock as u, createElementBlock as i, normalizeClass as a, unref as f, renderSlot as m } from "vue";
 import { buttonProps as b } from "./button.mjs";
-import "./index.less.mjs";
+import "./style/index.css";
 const _ = ["disabled"], k = s({
   name: "ol-button"
 }), B = /* @__PURE__ */ s({

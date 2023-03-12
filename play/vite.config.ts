@@ -6,6 +6,5 @@ import Unocss from "unocss/vite";
 export default defineConfig({
 // @ts-ignore
   plugins: [vue(), DefineOptions(),
-    Unocss(),
   ],
 });
