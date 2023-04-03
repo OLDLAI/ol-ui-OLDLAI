@@ -1,16 +1,15 @@
 {
   "name": "olui-oldlai",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
-  "main": "lib/index.js", 
+  "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": [
     "es",
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:olui": "gulp -f packages/components/script/build/index.ts"
+    "release": "release-it"
   },
   "keywords": [
     "olui",
@@ -22,12 +21,8 @@
   "author": "OLDLAI",
   "license": "MIT",
   "typings": "lib/index.d.ts",
-  "scripts": {
-    "release": "release-it"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/OLDLAI/ol-ui-OLDLAI"
-  
   }
 }
