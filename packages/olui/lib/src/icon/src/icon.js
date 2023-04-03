@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t={name:{type:String},size:{type:Number||String,default:()=>22},class:{type:String},color:{type:String}};exports.iconProps=t;

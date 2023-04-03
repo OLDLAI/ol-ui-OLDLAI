@@ -1,3 +1,4 @@
+//注册组件
 import _Button from "./src/button.vue";
 import type { App, Plugin } from "vue";
 type SFCWithInstall<T> = T & Plugin;

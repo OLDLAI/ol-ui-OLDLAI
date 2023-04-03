@@ -16,18 +16,6 @@ const _ = ["disabled"], k = s({
         {
           "ol-button-disabled": o
         }
-        /* `
-        py-2 
-        px-4 
-        font-semibold 
-        rounded-lg 
-        shadow-md 
-        text-white 
-        bg-${props.color}-500 
-        hover:bg-${props.color}-700 
-        border-none 
-        cursor-pointer 
-        ` */
       ];
     });
     n(() => !t.type || t.type === "default" ? "" : "#ffffff");

@@ -39,8 +39,12 @@ export default {
                 items: [
                     {
                         text: "Button",
-                        link: "/components/button",
-                    }
+                        link: "/components/button/index.md",
+                    },
+                    {
+                        text: '输入框 Input',
+                        link: '/components/input/index.md',
+                      },
                 ],
             }
         ]

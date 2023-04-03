@@ -1,0 +1,35 @@
+.ol-input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--default-radius);
+  border: 1px solid #dde0e5;
+}
+.ol-input-wrapper:hover {
+  border-color: var(--primary-color-hover);
+}
+.ol-input-wrapper.ol-input__focus {
+  border-color: var(--primary-color);
+}
+.ol-input-wrapper.ol-input__focus.ol-input__hasClear .ol-input__inner .ol-input {
+  padding-right: 0;
+}
+.ol-input-wrapper .ol-input__inner {
+  width: 100%;
+}
+.ol-input-wrapper .ol-input__inner .ol-input {
+  box-sizing: border-box;
+  padding: 8px 12px 8px 12px;
+  height: 36px;
+  outline: none;
+  width: 100%;
+  border-radius: var(--default-radius);
+}
+.ol-input-wrapper .after-inner {
+  width: 20px;
+  margin: 0 6px;
+}
+.ol-input-wrapper .after-inner .ol-icon {
+  opacity: 0.48;
+  cursor: pointer;
+}
