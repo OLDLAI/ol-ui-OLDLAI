@@ -1,8 +1,10 @@
 import { Button as t } from "./button/index.mjs";
-import { Input as e } from "./input/index.mjs";
-import { Icon as m } from "./icon/index.mjs";
+import { Input as f } from "./input/index.mjs";
+import { Icon as p } from "./icon/index.mjs";
+import { Infinite as x } from "./infinite-scrolling/index.mjs";
 export {
   t as Button,
-  m as Icon,
-  e as Input
+  p as Icon,
+  x as Infinite,
+  f as Input
 };

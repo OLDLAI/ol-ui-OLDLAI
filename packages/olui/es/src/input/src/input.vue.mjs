@@ -1,5 +1,5 @@
-import { defineComponent as C, ref as f, computed as _, resolveComponent as b, openBlock as i, createElementBlock as p, normalizeClass as B, unref as l, createCommentVNode as d, createElementVNode as v, withDirectives as E, isRef as N, vModelText as R, createVNode as s } from "vue";
-import { InputProps as w, Emits as x } from "./input.mjs";
+import { defineComponent as _, ref as u, computed as c, resolveComponent as y, openBlock as p, createElementBlock as i, normalizeClass as B, unref as a, createCommentVNode as d, createElementVNode as m, withDirectives as E, isRef as N, vModelText as R, createVNode as b } from "vue";
+import { InputProps as w, Emits as z } from "./input.mjs";
 import "./style/index.css";
 const F = {
   class: "ol-input__inner",
@@ -7,79 +7,63 @@ const F = {
 }, I = ["placeholder"], D = {
   key: 1,
   class: "after-inner"
-}, M = {
-  key: 2,
-  class: "after-inner"
-}, P = C({
+}, M = _({
   name: "ol-input"
-}), q = /* @__PURE__ */ C({
-  ...P,
+}), j = /* @__PURE__ */ _({
+  ...M,
   props: w,
-  emits: x,
-  setup(h, { emit: a }) {
-    const m = h, r = f(), u = f(!1), k = (e) => {
-      const n = e.target;
-      a("change", n.value);
-    }, o = _({
+  emits: z,
+  setup(f, { emit: n }) {
+    const r = f, l = u(), s = u(!1), v = (e) => {
+      const t = e.target;
+      n("change", t.value);
+    }, o = c({
       //双向绑定
       get() {
-        return m.modelValue;
+        return r.modelValue;
       },
       set(e) {
-        a("update:modelValue", e);
+        n("update:modelValue", e);
       }
-    }), g = _(() => [
+    }), h = c(() => [
       "ol-input-wrapper",
       {
-        "ol-input__focus": u.value,
-        "ol-input__hasClear": m.hasClear
+        "ol-input__focus": s.value,
+        "ol-input__hasClear": r.hasClear
       }
-    ]), c = () => {
-      console.log("clear"), a("update:modelValue", ""), r.value.focus(), r.value.value = "";
+    ]), C = () => {
+      console.log("clear"), n("update:modelValue", ""), l.value.focus(), l.value.value = "";
     }, V = () => {
-      u.value = !0;
-    }, y = () => {
-      u.value = !1;
+      s.value = !0;
+    }, g = () => {
+      s.value = !1;
     };
-    return (e, n) => {
-      const t = b("ol-icon");
-      return i(), p("div", {
-        class: B(l(g))
+    return (e, t) => {
+      const k = y("ol-icon");
+      return p(), i("div", {
+        class: B(a(h))
       }, [
         d("", !0),
-        v("div", F, [
-          E(v("input", {
-            "onUpdate:modelValue": n[0] || (n[0] = (z) => N(o) ? o.value = z : null),
+        m("div", F, [
+          E(m("input", {
+            "onUpdate:modelValue": t[0] || (t[0] = (x) => N(o) ? o.value = x : null),
             onFocus: V,
-            onBlur: y,
-            onInput: k,
+            onBlur: g,
+            onInput: v,
             class: "ol-input",
             placeholder: e.placeholder,
             type: "text",
             ref_key: "inputRef",
-            ref: r
+            ref: l
           }, null, 40, I), [
-            [R, l(o)]
+            [R, a(o)]
           ])
         ]),
-        e.hasClear && l(o) ? (i(), p("div", D, [
-          s(t, {
+        e.hasClear && a(o) ? (p(), i("div", D, [
+          b(k, {
             size: 18,
-            name: "icon-guanbi",
-            onClick: c
-          }),
-          s(t)
-        ])) : d("", !0),
-        e.hasClear && l(o) ? (i(), p("div", M, [
-          s(t, {
-            size: 18,
-            name: "delete-filling",
-            onClick: c
-          }),
-          s(t, {
-            size: 18,
-            name: "bofang1",
-            onClick: c
+            name: "#icon-guanbi2",
+            onClick: C
           })
         ])) : d("", !0)
       ], 2);
@@ -87,5 +71,5 @@ const F = {
   }
 });
 export {
-  q as default
+  j as default
 };

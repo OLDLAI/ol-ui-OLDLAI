@@ -1,8 +1,25 @@
+import { components } from '../metadata.json'
+const guideSidebar = [
+    {
+      text: '基础',
+      items: [
+        { text: '快速开始', link: '/guide/' }
+      ]
+    },
+    {
+      text: '进阶',
+      items: [
+        { text: '国际化', link: '/guide/i18n' }
+      ]
+    }
+  ]
+let componentNav
+const componentsSidebar = componentNav = components
 export default {
     themeConfig: {
-      siteTitle: "vitepress",
+      siteTitle: "ol-ui",
       nav: [
-        { text: "指南", link: "/guild/introduce.md" },
+        { text: "指南", link: "/guide/introduce.md" },
         { text: "组件", link: "/components/button/" },
       ],
       socialLinks: [
@@ -38,14 +55,23 @@ export default {
                 text: "基础组件",
                 items: [
                     {
-                        text: "Button",
+                        text: "Button 按钮",
                         link: "/components/button/index.md",
                     },
                     {
-                        text: '输入框 Input',
+                        text: 'Input 输入框',
                         link: '/components/input/index.md',
-                      },
+                    },
                 ],
+            },
+            {
+              text: "优化组件",
+                items: [
+                  {
+                    text: 'infinite-scrolling 无限滚动',
+                    link: '/components/infinite-scrolling/index.md',
+                  },
+                  ],
             }
         ]
     },

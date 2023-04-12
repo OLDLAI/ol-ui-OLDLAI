@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=(e=!1)=>({type:Boolean,default:()=>e}),o=e=>({type:Number,default:()=>e||null}),r=(e=null)=>({type:Object,default:()=>e}),n=(e=null)=>({type:Function,default:()=>e});exports.setBooleanProp=t;exports.setFunctionProp=n;exports.setNumberProp=o;exports.setObjectProp=r;

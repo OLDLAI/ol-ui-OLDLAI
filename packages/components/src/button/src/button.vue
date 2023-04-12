@@ -1,6 +1,9 @@
 <template>
     <button :class="computedCls" @click="onClick" :disabled="props.disabled">
-        <slot></slot>
+        <span class="ol-button_inner">
+          <ol-icon v-if="icon" :name="props.icon" :color="iconColor"></ol-icon>
+          <slot></slot>
+        </span>
     </button>
 </template>
   

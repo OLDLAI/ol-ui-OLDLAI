@@ -2,11 +2,12 @@
 import { iconProps } from './icon'
 import { computed, onMounted } from 'vue'
 import './style/index.less'
-import 'https:////at.alicdn.com/t/font_3439532_mj2vbrlosb.js'
+import 'https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js'
 
 const props = defineProps(iconProps)
 onMounted(() => {
-  import('https:////at.alicdn.com/t/c/font_3653999_v9boqzux0j.js')
+  import('https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js')
+  
   //at.alicdn.com/t/font_3439532_mj2vbrlosb.js
 })
 const style = computed(() => {
@@ -30,6 +31,6 @@ export default defineComponent({
 
 <template>
   <svg :class="classes" :style="style" aria-hidden="true">
-    <use :xlink:href="`#icon-${props.name}`" />
+    <use :xlink:href="`${props.name}`" />
   </svg>
 </template>

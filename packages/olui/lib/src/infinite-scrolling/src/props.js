@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("../../_utils/props/index.js"),e={distance:o.setNumberProp(0),styles:o.setObjectProp(),loading:o.setBooleanProp(),onScrollEnd:o.setFunctionProp(),onScrollWhen:o.setFunctionProp()};exports.Props=e;

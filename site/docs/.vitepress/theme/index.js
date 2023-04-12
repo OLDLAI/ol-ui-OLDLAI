@@ -1,5 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import olui1 from "olui-oldlai";
+import './var.css'
+import './markdownClass.less'
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {

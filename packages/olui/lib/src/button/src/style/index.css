@@ -1,12 +1,11 @@
 .ol-button {
-  display: inline-block;
+  display: inline-flex;
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
   background: #fff;
   border: 1px solid #dcdfe6;
   color: #606266;
-  -webkit-appearance: none;
   text-align: center;
   box-sizing: border-box;
   outline: none;
@@ -17,6 +16,11 @@
   font-size: 14px;
   border-radius: 4px;
 }
+.ol-button .ol-button_inner {
+  height: 24px;
+  line-height: 24px;
+  display: inline-flex;
+}
 .ol-button.ol-button-primary {
   color: #fff;
   background-color: #409eff;
@@ -26,4 +30,30 @@
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;
+}
+.ol-button.ol-button-success {
+  color: #fff;
+  background-color: #00b42a;
+  border-color: #00b42a;
+}
+.ol-button.ol-button-success:hover {
+  color: #fff;
+  background-color: #23c343;
+}
+.ol-button.ol-button-warning {
+  color: #fff;
+  background-color: #ff7d00;
+}
+.ol-button.ol-button-warning:hover {
+  background-color: #ff9a2e;
+}
+.ol-button.ol-button-warning:active {
+  background-color: #d25f00;
+}
+.ol-button.ol-button-danger {
+  color: #fff;
+  background-color: #f53f3f;
+}
+.ol-button.ol-button-danger:hover {
+  background-color: #f76560;
 }

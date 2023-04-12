@@ -1,7 +1,7 @@
-import { defineComponent as s, onMounted as l, computed as t, openBlock as a, createElementBlock as p, normalizeClass as m, unref as n, normalizeStyle as u, createElementVNode as f } from "vue";
+import { defineComponent as s, onMounted as c, computed as t, openBlock as a, createElementBlock as p, normalizeClass as m, unref as n, normalizeStyle as u, createElementVNode as f } from "vue";
 import { iconProps as d } from "./icon.mjs";
 import "./style/index.css";
-import "https:////at.alicdn.com/t/font_3439532_mj2vbrlosb.js";
+import "https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js";
 const _ = ["xlink:href"], h = s({
   name: "ol-icon"
 }), B = /* @__PURE__ */ s({
@@ -9,8 +9,8 @@ const _ = ["xlink:href"], h = s({
   props: d,
   setup(r) {
     const e = r;
-    l(() => {
-      import("https:////at.alicdn.com/t/c/font_3653999_v9boqzux0j.js");
+    c(() => {
+      import("https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js");
     });
     const i = t(() => {
       const o = typeof e.size == "string" ? e.size : `${e.size}px`;
@@ -19,14 +19,14 @@ const _ = ["xlink:href"], h = s({
         width: o,
         height: o
       };
-    }), c = t(() => ["ol-icon", e.class]);
+    }), l = t(() => ["ol-icon", e.class]);
     return (o, z) => (a(), p("svg", {
-      class: m(n(c)),
+      class: m(n(l)),
       style: u(n(i)),
       "aria-hidden": "true"
     }, [
       f("use", {
-        "xlink:href": `#icon-${e.name}`
+        "xlink:href": `${e.name}`
       }, null, 8, _)
     ], 6));
   }

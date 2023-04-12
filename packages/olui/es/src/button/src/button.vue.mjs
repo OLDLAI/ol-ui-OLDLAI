@@ -1,39 +1,47 @@
-import { defineComponent as s, computed as n, openBlock as u, createElementBlock as i, normalizeClass as a, unref as f, renderSlot as m } from "vue";
-import { buttonProps as b } from "./button.mjs";
+import { defineComponent as s, computed as n, resolveComponent as f, openBlock as l, createElementBlock as _, normalizeClass as b, unref as c, createElementVNode as k, createBlock as C, createCommentVNode as y, renderSlot as h } from "vue";
+import { buttonProps as B } from "./button.mjs";
 import "./style/index.css";
-const _ = ["disabled"], k = s({
+const E = ["disabled"], N = { class: "ol-button_inner" }, V = s({
   name: "ol-button"
-}), B = /* @__PURE__ */ s({
-  ...k,
-  props: b,
+}), P = /* @__PURE__ */ s({
+  ...V,
+  props: B,
   emits: ["click"],
-  setup(l, { expose: r, emit: c }) {
-    const t = l, d = n(() => {
-      const { type: e, disabled: o } = t;
+  setup(r, { expose: i, emit: a }) {
+    const o = r, d = n(() => {
+      const { type: e, disabled: t } = o;
       return [
         "ol-button",
         `ol-button-${e}`,
         {
-          "ol-button-disabled": o
+          "ol-button-disabled": t
         }
       ];
-    });
-    n(() => !t.type || t.type === "default" ? "" : "#ffffff");
-    const p = () => {
-      c("click");
+    }), p = n(() => !o.type || o.type === "default" ? "" : "#ffffff"), u = () => {
+      a("click");
     };
-    return r({
+    return i({
       /** @description button type */
-      type: t.type
-    }), (e, o) => (u(), i("button", {
-      class: a(f(d)),
-      onClick: p,
-      disabled: t.disabled
-    }, [
-      m(e.$slots, "default")
-    ], 10, _));
+      type: o.type
+    }), (e, t) => {
+      const m = f("ol-icon");
+      return l(), _("button", {
+        class: b(c(d)),
+        onClick: u,
+        disabled: o.disabled
+      }, [
+        k("span", N, [
+          e.icon ? (l(), C(m, {
+            key: 0,
+            name: o.icon,
+            color: c(p)
+          }, null, 8, ["name", "color"])) : y("", !0),
+          h(e.$slots, "default")
+        ])
+      ], 10, E);
+    };
   }
 });
 export {
-  B as default
+  P as default
 };

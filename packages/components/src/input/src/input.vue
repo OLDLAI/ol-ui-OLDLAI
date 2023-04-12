@@ -65,14 +65,9 @@ export default defineComponent({
           ref="inputRef"
         />
       </div>
+      
       <div v-if="hasClear && model" class="after-inner">
-        <ol-icon :size="18" name="icon-guanbi" @click="onClear" />
-        <ol-icon/>
-        <!-- <ol-button @click="onClear" type="primary">清除</ol-button> -->
-      </div>
-      <div v-if="hasClear && model" class="after-inner">
-        <ol-icon :size="18" name="delete-filling" @click="onClear" />
-        <ol-icon :size="18" name="bofang1" @click="onClear" />
+        <ol-icon :size="18" name="#icon-guanbi2" @click="onClear" />
       </div>
     </div>
 </template>

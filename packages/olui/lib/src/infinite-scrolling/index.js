@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const l=require("./src/infinite-scrolling.vue.js"),u=e=>(e.install=n=>{const i=e.name;n.component(i,e)},e),t=u(l.default);exports.Infinite=t;exports.default=t;

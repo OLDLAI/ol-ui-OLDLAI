@@ -1,0 +1,21 @@
+{
+    "components": [
+      {
+        "text": "基础组件",
+        "items": [
+          {
+            "text": "Input 输入框",
+            "link": "/components/input/"
+          },
+          {
+            "text": "Button 按钮",
+            "link": "/components/button/"
+          },
+          {
+            "text": "infinite-scrolling 无限滚动",
+            "link": "/components/infinite-scrolling/"
+          }
+        ]
+      }
+    ]
+  }

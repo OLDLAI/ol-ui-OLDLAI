@@ -1,5 +1,4 @@
 <template>
-
   <ol-button type="primary" >主要按钮</ol-button>
   <ol-button color="blue">蓝色按钮</ol-button>
   <ol-button color="green">绿色按钮</ol-button>
@@ -9,6 +8,14 @@
   <ol-icon name="guanbi" />
   <ol-icon name="bofang3" />
   <ol-input v-model="inputValue2" hasClear placeholder="请输入" />
+  <ol-button>
+    <ol-icon name="guanbi2" />
+    按钮
+  </ol-button>
+  <ol-button type="primary">
+    <ol-icon color="#ffffff" name="guanbi4" />
+    按钮
+  </ol-button>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
