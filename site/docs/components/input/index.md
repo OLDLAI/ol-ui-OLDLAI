@@ -5,6 +5,7 @@
 通常可以直接使用内置指令`v-model`实现双向绑定
 <ol-input v-model="inputValue1" placeholder="请输入" />
 {{ inputValue1 }}
+
 :::details 点击展开
 ```vue
 <template>

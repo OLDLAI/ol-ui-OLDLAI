@@ -33,7 +33,6 @@
 </style>
 
 
-
 ```html
 <template>
   <f-infinite-scrolling :on-scroll-end="onScrollEnd">
@@ -65,9 +64,6 @@
 ```
 
 
-
-
-
 ## Attributes
 
 | 参数             | 说明               | 类型                                                                       | 可选值 | 默认值 |
@@ -77,33 +73,4 @@
 | `styles`         | 滚动组件样式       | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | ——     | ——     |
 | `on-scroll-end`  | 滚动到底触发的回调 | <a href="#scrollcallback">ScrollCallback</a>                               | ——     | ——     |
 | `on-scroll-when` | 滚动时触发的回调   | <a href="#scrollcallback">ScrollCallback</a>                               | ——     | ——     |
-
-## Interface
-
-组件导出以下类型定义：
-
-```ts
-import type {
-  InfiniteScrollingInstance,
-  InfiniteScrollingProps,
-  ScrollCallback
-} from 'fighting-design'
-```
-
-### ScrollCallback
-
-```ts
-type ScrollCallback = (distance: number) => void
-```
-
-## Contributors
-
-<a href="https://github.com/Tyh2001" target="_blank">
-  <f-avatar round src="https://avatars.githubusercontent.com/u/73180970?v=4" />
-</a>
-
-<a href="https://github.com/HoldingTheGhostAtTheGrave" target="_blank">
-  <f-avatar round src="https://avatars.githubusercontent.com/u/76578532?v=4" />
-</a>
-
 

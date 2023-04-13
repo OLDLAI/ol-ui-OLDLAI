@@ -9,8 +9,7 @@ hero:
   text:  Component Library for Vue3
   tagline: Built on Vue3 and Vitejs .
   image:
-    
-    src: /AI改图-猫猫头-769x996.png
+    src: /1.png
     alt: OL-UI
   actions:
     - theme: brand

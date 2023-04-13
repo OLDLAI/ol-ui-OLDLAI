@@ -1,10 +1,9 @@
 import { defineComponent as s, onMounted as c, computed as t, openBlock as a, createElementBlock as p, normalizeClass as m, unref as n, normalizeStyle as u, createElementVNode as f } from "vue";
 import { iconProps as d } from "./icon.mjs";
 import "./style/index.css";
-import "https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js";
 const _ = ["xlink:href"], h = s({
   name: "ol-icon"
-}), B = /* @__PURE__ */ s({
+}), g = /* @__PURE__ */ s({
   ...h,
   props: d,
   setup(r) {
@@ -32,5 +31,5 @@ const _ = ["xlink:href"], h = s({
   }
 });
 export {
-  B as default
+  g as default
 };

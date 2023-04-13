@@ -2,7 +2,6 @@
 import { iconProps } from './icon'
 import { computed, onMounted } from 'vue'
 import './style/index.less'
-import 'https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js'
 
 const props = defineProps(iconProps)
 onMounted(() => {
