@@ -16,8 +16,6 @@
 
 /**
  * 执行方法
- *
- * 
  */
  const useRun = (): UseRunReturn => {
   /**
@@ -43,7 +41,7 @@
   /** 元素节点 */
   const scrollEl = ref<HTMLDivElement>()
 
-  /** 滚动触发 */
+  /** 滚动触发 监听滚动事件的函数 */
   const scroll = (): void => {
     if (prop.loading) return
 
@@ -54,9 +52,7 @@
     if (!view) return
 
     /**
-     * 获取到滚动的距离
-     *
-     * @see Math.ceil() https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/cei
+     * 获取到滚动的距离 当前滚动距离
      */
     const viewScrollingDistance: number = Math.ceil(
       view.scrollTop + view.clientHeight + prop.distance
@@ -67,9 +63,8 @@
 
     /** 如果滚动的距离大于容器高度执行 */
     if (viewScrollingDistance >= view.scrollHeight && !target.value) {
-      /** 批处理 触底时回调 */
+      /* 批处理 触底时回调 */
       target.value = true
-
       run((distance: number): void => {
         prop.onScrollEnd(distance)
         target.value = false
