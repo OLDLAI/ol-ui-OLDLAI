@@ -12,15 +12,16 @@ const onInput = (e: Event): void => {
   emit('change', tar.value)
 }
 
-const model: WritableComputedRef<unknown> = computed({
-  //双向绑定
-  get() {
-    return props.modelValue
-  },
-  set(value) {
-    emit('update:modelValue', value)
-  },
-})
+  const model= computed({
+    //双向绑定
+    get() {
+      return props.modelValue
+    },
+    set(value) {
+      emit('update:modelValue', value)
+    },
+  })
+
 const computedCls = computed(() => {
   return [
     'ol-input-wrapper',

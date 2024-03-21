@@ -6,6 +6,7 @@ declare module "@vue/runtime-core" {
     olInput: typeof components.Input;
     olIcon: typeof components.Icon;
     olInfinite:typeof components.Infinite
+    olInfinite1:typeof components.Infinite1
   }
 }
 

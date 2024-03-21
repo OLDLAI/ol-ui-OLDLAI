@@ -6,7 +6,6 @@ import './style/index.less'
 const props = defineProps(iconProps)
 onMounted(() => {
   import('https:////at.alicdn.com/t/c/font_3439532_oigkay6g43f.js')
-  
   //at.alicdn.com/t/font_3439532_mj2vbrlosb.js
 })
 const style = computed(() => {

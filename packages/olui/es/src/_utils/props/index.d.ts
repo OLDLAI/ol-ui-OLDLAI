@@ -67,3 +67,5 @@ export declare const setFunctionProp: <T extends Function>(defaultVal?: null) =>
  * @returns { Object } 配置对象
  */
 export declare const setArrayProp: <T>(defaultVal?: T | null | undefined) => BasicType<PropType<T>, T | null>;
+export declare const isNumber: (val: any) => val is number;
+export declare const isString: (val: unknown) => val is string;

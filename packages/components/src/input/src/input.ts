@@ -1,6 +1,6 @@
 export const InputProps = {
     modelValue: {
-      type: String,
+      type: [Number, String],
     },
     hasClear: {
       type: Boolean,
@@ -19,4 +19,4 @@ export const InputProps = {
     change(value: unknown) {
       return typeof value
     },
-}
+  }

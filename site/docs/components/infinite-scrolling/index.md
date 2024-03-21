@@ -1,76 +1,81 @@
-# Infinite Scrolling 无限滚动
 
-永远不会到底吗？确实
-
-## 基本使用
-
-`on-scroll-end` 滚动到底触发执行函数
-
-<script lang="ts" setup>
-  import { ref } from 'vue'
-
-  const length = ref(20)
-
-  const onScrollEnd = (): void => {
-    length.value += 10
-  }
-</script>
-
-<ol-infinite :on-scroll-end="onScrollEnd">
-    <div v-for="item in length" :key="item" class="item" style="">{{ item }}</div>
-</ol-infinite>
-
-<style scoped>
-  .item {
-    width: 100%;
-    height: 40px;
-    background: #96acf8;
-    color: #fff;
-    margin: 5px 0;
-    text-align: center;
-    line-height: 40px;
-  }
-</style>
-
-
-```html
-<template>
-  <f-infinite-scrolling :on-scroll-end="onScrollEnd">
-    <div v-for="item in length" :key="item" class="item" style="">{{ item }}</div>
-  </f-infinite-scrolling>
-</template>
+<ol-infinite1 :data="basicData" :item-height="50">
+                <template #default="{ item }">
+                    <div class="item" style="text-align: center; height: 50px">
+                        {{ item }}
+                    </div> 
+                </template>
+</ol-infinite1>
+<div class="com-virtualscroll-container">
+  <div class="flex-container">
+      <div class="flex-item">
+            <p>固定高度</p>
+            <div class="hezi" >
+            <ol-infinite1 :data="basicData" :item-height="50">
+                <template #default="{ item }">
+                    <div class="item" style="text-align: center; height: 50px">
+                        {{ item }}
+                    </div> 
+                </template>
+            </ol-infinite1>
+            </div>
+    </div>
+    <div class="flex-item">
+            <p>动态高度</p>
+      <div class="hezi">
+            <ol-infinite1 :data="data" :item-height="50" dynamic>
+                <template #default="{ item }">
+                    <div class="item">
+                        {{ item }}
+                    </div>
+                </template>
+            </ol-infinite1>
+      </div>      
+    </div>
+  </div>
+</div>
 
 <script lang="ts" setup>
-  import { ref } from 'vue'
+import { ref } from 'vue';
+const basicData = ref<number[]>([]);
+const data = ref<any[]>([]);
 
-  const length = ref(20)
+for (let i = 0; i < 100000; i++) {
+    basicData.value.push(i);
 
-  const onScrollEnd = (): void => {
-    length.value += 10
-  }
+    // 用随机文本生成器替代 Random.cparagraph
+    data.value.push(i + 1 + ". " + generateRandomText());
+}
+
+// 这个函数将生成一个简单的随机文本段落
+function generateRandomText() {
+    const words = ["lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit"];
+    let result = "";
+    for (let i = 0; i < 40; i++) {
+        result += words[Math.floor(Math.random() * words.length)] + " ";
+    }
+    return result.trim();
+}
 </script>
 
-<style scoped>
-  .item {
-    width: 100%;
-    height: 40px;
-    background-color: #96acf8;
-    color: #fff;
-    margin: 5px 0;
-    text-align: center;
-    line-height: 40px;
-  }
+<style lang="less" scoped>
+.item {
+    line-height: 25px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1; /* 每个 flex-item 占用等宽度 */
+    padding: 10px; /* 如果需要的话，可以调整间距 */
+}
+.hezi {
+    height: 500px; /* 这是容器的高度，您可以根据需要进行调整 */
+    overflow-y: auto; /* 这将确保当内容超出这个高度时会显示滚动条 */
+}
+
 </style>
-```
-
-
-## Attributes
-
-| 参数             | 说明               | 类型                                                                       | 可选值 | 默认值 |
-| ---------------- | ------------------ | -------------------------------------------------------------------------- | ------ | ------ |
-| `distance`       | 触发距离           | number                                                                     | ——     | 0      |
-| `loading`        | 开启加载           | boolean                                                                    | ——     | false  |
-| `styles`         | 滚动组件样式       | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | ——     | ——     |
-| `on-scroll-end`  | 滚动到底触发的回调 | <a href="#scrollcallback">ScrollCallback</a>                               | ——     | ——     |
-| `on-scroll-when` | 滚动时触发的回调   | <a href="#scrollcallback">ScrollCallback</a>                               | ——     | ——     |
-

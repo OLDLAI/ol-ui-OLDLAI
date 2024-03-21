@@ -1,6 +1,6 @@
 export declare const InputProps: {
     modelValue: {
-        type: StringConstructor;
+        type: (StringConstructor | NumberConstructor)[];
     };
     hasClear: {
         type: BooleanConstructor;

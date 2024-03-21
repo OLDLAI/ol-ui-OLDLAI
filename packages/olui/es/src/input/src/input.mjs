@@ -1,6 +1,6 @@
 const t = {
   modelValue: {
-    type: String
+    type: [Number, String]
   },
   hasClear: {
     type: Boolean,
@@ -10,13 +10,13 @@ const t = {
     type: String,
     default: () => "请输入"
   }
-}, o = {
+}, r = {
   "update:modelValue": (e) => typeof e == "string" || typeof e == "number",
   change(e) {
     return typeof e;
   }
 };
 export {
-  o as Emits,
+  r as Emits,
   t as InputProps
 };
