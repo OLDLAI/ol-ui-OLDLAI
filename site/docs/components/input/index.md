@@ -6,6 +6,7 @@
 <ol-input v-model="inputValue1" placeholder="请输入" />
 {{ inputValue1 }}
 
+
 :::details 点击展开
 ```vue
 <template>
