@@ -164,9 +164,4 @@ export default defineComponent({
 });
 </script>
 
-<style lang="less" scoped>
-.base-virtual-wrapper {
-    position: relative;
-    overflow-y: auto;
-}
-</style>
+

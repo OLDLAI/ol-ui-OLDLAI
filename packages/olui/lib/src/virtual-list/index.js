@@ -1,1 +1,1 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const l=require("./src/virtual-list-observer.vue.js"),r=e=>(e.install=n=>{const i=e.name;n.component(i,e)},e),t=r(l.default);exports.Infinite1=t;exports.default=t;
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const i=require("./src/virtual-list-observer.vue.js"),r=e=>(e.install=n=>{const u=e.name;n.component(u,e)},e),t=r(i.default);exports.Infinite1=t;exports.default=t;
